@@ -1,0 +1,286 @@
+/*
+ *  Jared Schroeder
+ *  styles.css
+ *  11/17/24
+ *
+ */
+ 
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Styles for Body Content*/
+body {
+  background-color: #4e5a65;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+}
+
+
+/* Style Rules for Mobile Viewport */
+
+/* Hide tab-desk */
+.tab-desk {
+  display: none;
+}
+
+/*header*/
+header {
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.6);
+  padding: 1%;
+}
+
+header h1 {
+  font-style: normal;
+  font-size: 4em;
+  text-shadow: 4px 4px 10px rgba(247,206,82,0.8);
+}
+
+header h3 {
+  font-size: 1.8em;
+  font-style: normal;
+}
+
+/*nav*/
+nav {
+  background-color: rgba(0,0,0,0.6);
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+  border-radius: 1px;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5%;
+}
+
+/*main*/
+main {
+  height: 100%;
+  min-height: 100%;
+  padding: 2%;
+  background-color: #4e5a65;
+  font-style: normal;
+}
+
+tr {
+  background-color: red;
+}
+
+tr:nth-child(odd) {
+  background-color: black;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  color: #ffffff;
+}
+
+#spec {
+  display: block;
+  width: 100%;
+}
+
+div.radio, div.check {
+  float: left;
+  width: 100%;
+}
+
+div#submitbutton, div#resetbutton {
+  margin: 0;
+  float: left;
+  width: auto;
+  max-width: 50%;
+}
+
+div#submitbutton {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+div#resetbutton {
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+fieldset {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 2% 0;
+}
+
+textarea {
+  resize: none;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+p {
+  color: #ffffff;
+}
+
+figcaption {
+  color: #ffffff;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+caption {
+  color: white;
+}
+
+tr td {
+  color: black;
+  text-align: center;
+}
+
+tr:nth-of-type(odd) td {
+  color: white;
+}
+
+figure {
+  width: 85%;
+  margin: 0 auto;
+}
+
+figure * {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 500px), print {
+  /* Show tab-desk, hide mobile */
+  .tab-desk {
+    display: block;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  main {
+    overflow: auto;
+  }
+  
+  div.radio {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+  /* Show tab-desk, hide mobile */
+  .tab-desk {
+    display: block;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+  }
+  
+  nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+  
+  nav li a:link {
+    color: #ffffff;
+  }
+  
+  nav li a:visited {
+    color: #ffffff;
+  }
+  
+  nav li a:hover {
+    color: rgba(247,206,82,0.7);
+  }
+  
+  nav li a:active {
+    color: rgba(255,214,82,1);
+  }
+  
+  body {
+    background-image: linear-gradient(to right, #000000, #4e5a65, #708090);
+    background-color: #4e5a65;
+    background-repeat: no-repeat;
+  }
+  
+  main {
+    overflow: auto;
+    background-color: rgba(78,90,101,0.4);
+  }
+  
+  div#missB, div#submitB {
+    width: 33%;
+    margin: 0 auto;
+  }
+  
+  div#moreB {
+    width: 34%;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
+  #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+
+}
+
+/* Media Query for Print */
+@media print {
+  
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}

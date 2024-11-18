@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+  Jared Schroeder
+  info.html
+  11/17/24
+-->
+
+<html lang="en">
+  <head>
+    <title>Information</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  
+  <body>
+    <div id="container">
+      <header>
+        <h1>Puzzle Books</h1>
+        <h3>&#9733; Info &#9733;</h3>
+      </header>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="types.html">Types</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="info.html">Information</a></li>
+        </ul>
+      </nav>
+      
+      <!-- add content to the main section -->
+      <main>
+        <form>
+          <fieldset>
+            <p>Favorite?</p>
+            <div id="crosswordB" class="radio">
+              <input type="radio" name="fav" id="crossword" value="Crossword" checked>
+              <label for="crossword">Crossword Puzzles</label>
+            </div>
+            <div id="sudokuB" class="radio">
+              <input type="radio" name="fav" id="sudoku" value="Sudoku">
+              <label for="sudoku">Sudoku Puzzles</label>
+            </div>
+            <div id="logicB" class="radio">
+              <input type="radio" name="fav" id="logic" value="Logic">
+              <label for="logic">Logic Puzzles</label>
+            </div>
+            <div id="searchB" class="radio">
+              <input type="radio" name="fav" id="search" value="Search and Find">
+              <label for="search">Search and Find Puzzles</label>
+            </div>
+          </fieldset>
+          
+          <fieldset>
+            <label id="spec">Any additional thoughts?</label>
+            <textarea name="desc"></textarea>
+            <div id="missB" class="check">
+              <input type="checkbox" name="other" id="miss" value="Missing Types">
+              <label for="miss">Puzzle type missing</label>
+            </div>
+            <div id="moreB" class="check">
+              <input type="checkbox" name="other" id="more" value="More Info">
+              <label for="more">Rqeust more information</label>
+            </div>
+            <div id="submitB" class="check">
+              <input type="checkbox" name="other" id="submit" value="Submit puzzle">
+              <label for="submit">Submit a puzzle</label>
+            </div>
+          </fieldset>
+          
+          <div id="submitbutton">
+            <input type="submit" value="Submit">
+          </div>
+          <div id="resetbutton">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+        
+      </main>
+    </div>
+  </body>
+</html>
